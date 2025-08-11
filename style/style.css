@@ -1,0 +1,88 @@
+@font-face {
+    font-family: zesty;
+    src: url(../fonts/PlaywriteAUQLD-VariableFont_wght.ttf);
+}
+*{
+    font-family: zesty;
+}
+header{
+    text-align: center;
+    font-size: 40px;
+}
+body{
+    background-image: url(../pinkGlitt.jpg);
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main div{
+    position: relative;
+    padding: 20px;
+
+    height: 300px;
+    width: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+main div .image{
+    height: 80%;
+    width: 80%;
+}
+main div .Frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.girrafe{
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    bottom: -60px;
+    left: 20px;
+    
+    transition: linear 1s;
+}
+.girrafe img{
+    height: 100%;
+    width: 100%;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
+footer div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+footer div video{
+    height: 800px;
+}
+.jumpscare{
+    font-size: 150px;
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: red;
+    opacity: 0;
+}
+@media (max-width:551px){
+    footer div video{
+    height: 300px;
+    }
+}
